@@ -1,31 +1,23 @@
+def is_palindrome(words):
+    x = len(words)
+    i = 0
+    x = x - 1
+    k = 0
+    while x - i >= i:
+        if words[x - i] == words[i]:
+            i += 1
+        else:
+            k = 1
+            break
 
-word = str(input("Введите слова: "))
-x = len(word)
-i = 0
-x = x - 1
-k = 0
-while x - i >= i:
-    if word[x - i] == word[i]:
-        i += 1
-    else:
-        k = 1
+    return k == 0
+
+
+while True:
+    word = input("Введите слово (или 'выход' для завершения): ")
+    if word.lower() == 'выход':
         break
-if k == 1:
-    print(f"{word}: это не полиндром")
-else:
-    print(f"{word}: это полиндром")
-word = str(input("Введите слова: "))
-x = len(word)
-i = 0
-x = x - 1
-k = 0
-while x - i >= i:
-    if word[x - i] == word[i]:
-        i += 1
+    if is_palindrome(word):
+        print(f"{word}: это палиндром")
     else:
-        k = 1
-        break
-if k == 1:
-    print(f"{word}: это не полиндром")
-else:
-    print(f"{word}: это полиндром")
+        print(f"{word}: это не палиндром")
