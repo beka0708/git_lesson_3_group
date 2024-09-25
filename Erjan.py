@@ -7,7 +7,7 @@ def count_words(text):
 
 
 
-input_text = "Салам алейкум!! Кандайсын?"
+input_text = "Салам алейкум!! Кандайсын? 1 2 3"
 word_count = count_words(input_text)
 print("Количество слов:", word_count)
 

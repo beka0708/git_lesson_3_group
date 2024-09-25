@@ -10,4 +10,5 @@ def sum_even_numbers(a, b):
     return total_sum
 
 
-print(sum_even_numbers(1, 5))
+print(sum_even_numbers(1, 5))   # 2, 4
+
