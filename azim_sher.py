@@ -14,8 +14,8 @@ def is_palindrome(words):
 
 
 while True:
-    word = input("Введите слово (или 'выход' для завершения): ")
-    if word.lower() == 'выход':
+    word = input("Введите слово (или '102' для завершения): ")
+    if word.lower() == '102':
         break
     if is_palindrome(word):
         print(f"{word}: это палиндром")
